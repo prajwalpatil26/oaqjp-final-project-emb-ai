@@ -1,0 +1,13 @@
+theia@theiadocker-username:/home/project/final_project$ python3
+Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> print(emotion_detector('I am really mad about this'))
+{"emotionPredictions":[{"emotion":{"anger":0.6865231,"disgust":0.009418525,"fear":0.09033327,"joy":0.01957418,"sadness":0.2285153},"target":"","emotionMentions":[{"span":{"begin":0,"end":26,"text":"I am really mad about this"},"emotion":{"anger":0.6865231,"disgust":0.009418525,"fear":0.09033327,"joy":0.01957418,"sadness":0.2285153}}]}],"producerId":{"name":"Ensemble Aggregated Emotion Workflow","version":"0.0.1"}}
+>>> exit()
+theia@theiadocker-username:/home/project/final_project$ python3 test_emotion_detection.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.654s
+
+OK
